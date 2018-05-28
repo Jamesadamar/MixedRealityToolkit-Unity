@@ -1,8 +1,8 @@
-# Interactable Objects & Receiver
+# Interactable Objects & Reciever
 ![Interactable Objects](/External/ReadMeImages/MRTK_InteractableObject.jpg)
 This example scene demonstrates how to make objects interactable using [CompoundButton](/Assets/HoloToolkit/UX/Scripts/Buttons/CompoundButton.cs) script scries. With CompoundButton script, you can make any object interactable with differentiated visual state for the HoloLens' gesture input or immersive headset's motion controller input state. For more information please see ['Interactable Object'](https://developer.microsoft.com/en-us/windows/mixed-reality/interactable_object) on Windows Dev Center.
 
-The scene also demonstrates how to use [Receiver](/Assets/HoloToolkit/UX/Scripts/Receivers/InteractionReceiver.cs) to handle events comging from multiple objects, in a single script. This is especially useful when you have multiple buttons or interactable objects in a scene. 
+The scene also demonstrates how to use [Reciever](/Assets/HoloToolkit/UX/Scripts/Receivers/InteractionReceiver.cs) to handle events comging from multiple objects, in a single script. This is especially useful when you have multiple buttons or interactable objects in a scene. 
  
 In the scene [InteractableObject_Examples.unity](/Assets/HoloToolkit-Examples/UX/Scenes/InteractableObjectExample.unity), you will be able to find various combinations of 'CompoundButton' scripts. To create your own Interactable Object, you can combine different types of 'CompoundButton' scripts. It is designed to support various types of Interactable Object in flexible way.
 
@@ -45,10 +45,10 @@ Use this script to automatically register keywords for your button in the Speech
 ### [Compound Button Toggle](/Assets/HoloToolkit/UX/Scripts/Buttons/Utilities/CompoundButtonToggle.cs) ###
 Use this script to add toggle on/off state.
 
-## Receiver ##
-![Receiver](/External/ReadMeImages/MRTK_Receiver.jpg)
+## Reciever ##
+![Reciever](/External/ReadMeImages/MRTK_Receiver.jpg)
 
-With Receiver, you can handle events from multiple objects in a single script. To use it, simply create a script and inherit from [InteractionReceiver](/Assets/HoloToolkit/UX/Scripts/Receivers/InteractionReceiver.cs). In this example scene, you cand find the example of using Receiver in [ButtonReceiverExample script](/Assets/HoloToolkit-Examples/UX/Scripts/ButtonReceiverExample.cs). The script uses Receiver to display the object name and event type. You can use switch case statement with **obj.name** to do specific action for the object that triggered the event.
+With Reciever, you can handle events from multiple objects in a single script. To use it, simply create a script and inherit from [InteractionReciever](/Assets/HoloToolkit/UX/Scripts/Receivers/InteractionReceiver.cs). In this example scene, you cand find the example of using Reciever in [ButtonRecieverExample script](/Assets/HoloToolkit-Examples/UX/Scripts/ButtonReceiverExample.cs). The script uses Reciever to display the object name and event type. You can use switch case statement with **obj.name** to do specific action for the object that triggered the event.
 
 <pre>
 protected override void InputDown(GameObject obj, InputEventData eventData) {
